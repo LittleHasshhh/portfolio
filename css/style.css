@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Red+Hat+Mono:wght@400;500;600;700&display=swap');
+
+/*
+font-family: 'Dancing Script', cursive;
+font-family: 'IBM Plex Sans Arabic', sans-serif;
+font-family: 'Red Hat Mono', monospace;
+*/
+:root {
+    --gros: 'Dancing Script', cursive;
+    --moyen: 'Red Hat Mono', monospace;
+    --normal: 'IBM Plex Sans Arabic', sans-serif;
+    --beige: rgb(221, 221, 200);
+}
+* {
+    margin: 0;
+}
+body {
+    font-size: 16px;
+    font-family: var(--normal);
+}
+.contain {
+    width: 90%;
+    margin: auto;
+}
+
+@keyframes typewriter{
+    from{width: 0;}
+    to{width: 11em;}
+}
+@keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+}
+.anim {
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 600ms steps(44) infinite normal;
+    position: relative;
+    top: 0%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+
+
+    /*Header*/
+
+header {
+    background-image: url(../photo/pexels-rejilal-ravi-2575955.jpg);
+    background-size: 1710px;
+    height: 100vh;
+}
+.hTop {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.hTop nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+.hTop nav ul li a {
+    padding: 3px 25px;
+    text-decoration: none;
+    color: var(--beige);
+    font-size: 1.2rem;
+    border-radius: 8px;
+}
+.hTop nav ul li a:hover {
+    color: gray;
+    border: 1px solid gray;
+    font-size: 1.1rem;
+}
+
+.hDown {
+    display: flex;
+    justify-content: space-around;
+    color: var(--beige);
+}
+.hDown div h1 {
+    padding-left: 40px;
+    font-size: 4rem;
+    font-family: var(--gros);
+    color: var(--beige);
+}
+.hDown div h1:first-of-type {
+    margin-top: 50px;
+}
+.me {
+    padding-top: 100px;
+    padding-left: 300px;
+}
+.me p {
+    text-align: center;
+    width: 350px;
+    margin-top: 25px;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+.me p:first-of-type {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+}
+.me a {
+    border-radius: 5px;
+    padding: 5px 50px;
+    background-color: rgb(0, 121, 161);
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-left: 21%;
+}
+
+    /*Main*/
+
+.firstSec {
+    border-top: 2px solid whitesmoke;
+    padding-top: 180px;
+    padding-bottom: 180px;
+    background-color: rgb(18, 18, 18);
+}
+.comp {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+}
+.comp > div {
+    color: var(--beige);
+    background-color: rgb(75, 75, 75);
+    border-radius: 15%;
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+    box-shadow:  0 0 20px rgb(180, 180, 180);
+}
+.comp > div div p{
+    margin-top: 15px;
+}
+
+    /******/
+
+.secondSec {
+    border-top: 2px solid whitesmoke;
+    background-image: url(../photo/pexels-jakub-novacek-924824.jpg);
+    background-size: 2200px;
+    height: 600px;
+}
+.profil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding-top: 80px;
+}
+.profil h2 {
+    font-size: 3rem;
+    font-family: var(--moyen);
+    color: var(--beige);
+    text-align: center;
+    margin: 20px;
+}
+.profil p {
+    color: var(--beige);
+    font-size: 1.5rem;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+.cont{
+    width: 50%;
+    margin: auto;
+}
